@@ -1,0 +1,45 @@
+# Corpo de Bombeiros Militar do Pará - Ventoy/GRUB Theme
+
+# Título
+title-text: ""
+title-color: "#d60000"          # vermelho
+message-font: "DejaVu Sans Regular 14"
+message-color: "#000000"
+message-bg-color: "#ffff00"     # amarelo
+desktop-image: "background.png"  # sua imagem de fundo 1920x1080
+desktop-color: "#000000"
+terminal-font: "DejaVu Sans Regular 14"
+
+# Menu de Boot
++ boot_menu {
+    left = 25%                  # centralizado
+    width = 50%
+    top = 35%                   # posição mais baixa (deixa espaço pro brasão)
+    height = 40%                # ocupa parte central
+    item_font = "DroidLogo Regular 17"
+    item_color = "#000000"      # preto (texto normal)
+    selected_item_font = "DroidLogo Regular 17"
+    selected_item_color = "#d60000" # vermelho (item selecionado)
+    icon_width = 24
+    icon_height = 24
+    item_height = 33
+    item_padding = 10
+    item_icon_space = 5
+    item_spacing = 5
+    menu_pixmap_style = "boot_menu2_*.png"
+    selected_item_pixmap_style = "highlight_*.png"
+}
+
+# Barra de Progresso (timeout)
++ progress_bar {
+  id = "__timeout__"
+  left = 0%
+  width = 100%
+  top = 97%
+  height = 20
+  show_text = false
+  fg_color = "#d60000"         # vermelho
+  bg_color = "#ffff00"         # amarelo
+  border_color = "#000000"
+  highlight_style = "progress_highlight_*.png"
+}
